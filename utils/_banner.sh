@@ -20,8 +20,7 @@ print_banner() {
   clear
 
   printf "\n\n"
-  
-  printf "${GREEN}";
+
   printf "
     ____  _            _____                     _             _       
    |  _ \(_)_ __   __ |_   _|__  ___ _ __   ___ | | ___   __ _(_) __ _ 
@@ -29,7 +28,9 @@ print_banner() {
    |  __/| | |_) | (_| || |  __/ (__| | | | (_) | | (_) | (_| | | (_| |
    |_|   |_| .__/ \__,_||_|\___|\___|_| |_|\___/|_|\___/ \__, |_|\__,_|
            |_|                                           |___/\n";    
-                                                                                                                                                                            
+  
+  printf "${GREEN}";
+                                                                                                                                                                              
   printf "ESSE MATERIAL FAZ PARTE DA PipaTec\n";
   printf "\n";
   printf "Compartilhar, vender ou fornecer essa solução\n";
