@@ -30,8 +30,7 @@ print_banner() {
    | |      | | | |_) | | (_| |    | |    |  __/ | (__ 
    |_|      |_| | .__/   \__,_|    |_|     \___|  \___|
                 | |                                    
-                |_|             
-\n";    
+                |_|             \n";    
                                                                                                                                                                             
   printf "ESSE MATERIAL FAZ PARTE DA PipaTec\n";
   printf "\n";
