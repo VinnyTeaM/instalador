@@ -15,9 +15,8 @@ system_create_user() {
   sleep 2
 
   sudo su - root <<EOF
-sudo apt-get install whois    # Instalação do pacote que contém o mkpasswd
-sudo useradd -m -p $(mkpasswd -m sha-512 "$mysql_root_password") -s /bin/bash deploy
-sudo usermod -aG sudo deploy
+useradd -m -p $(openssl passwd -1 ${mysql_root_password}) -s /bin/bash -G sudo deploy
+  usermod -aG sudo deploy
 
 EOF
 
