@@ -15,7 +15,8 @@ system_create_user() {
   sleep 2
 
   sudo su - root <<EOF
-  adduser -m -p $(openssl passwd -crypt ${mysql_root_password}) -s /bin/bash -G sudo deploy
+  sudo useradd deploy
+  echo "deploy:${mysql_root_password}" | sudo chpasswd
   usermod -aG sudo deploy
 EOF
 
