@@ -36,7 +36,7 @@ system_git_clone() {
 
   sleep 2
 
-  sudo su - deploy <<EOF
+ sudo -u deploy bash <<EOF
   git clone https://github.com/VinnyTeaM/saascodigo-pipa /home/deploy/${instancia_add}/
 EOF
 
